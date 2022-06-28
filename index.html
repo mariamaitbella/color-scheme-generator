@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400&family=League+Gothic&family=Space+Grotesk:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-area">
+        <input type="color" id="pickedColorInput" />
+        <select id="modeSelected">
+          <option>Monochrome</option>
+          <option>Monochrome-dark</option>
+          <option>Monochrome-light</option>
+          <option>Analogic</option>
+          <option>Complement</option>
+          <option>Analogic-complement</option>
+          <option>Triad</option>
+        </select>
+        <button id="get-color-scheme">Get color scheme</button>
+      </div>
+      <div id="colors-area" class="colors-area">
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

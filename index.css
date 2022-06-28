@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  font-family: "Anek Malayalam", sans-serif;
+  font-size: 15px;
+}
+
+.main-container {
+  background-color: white;
+  width: 600px;
+  height: 70%;
+  margin: 5em;
+  padding-top: 1em;
+}
+
+.top-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.top-area input {
+  border: none;
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+}
+.top-area select {
+  border-color: #d1d5db;
+  padding-left: 0.5em;
+  width: 60%;
+  border-radius: 5px;
+  height: 35px;
+  cursor: pointer;
+}
+.top-area button {
+  border: 1px solid #d1d5db;
+  padding-left: 0.5em;
+  width: 25%;
+  border-radius: 5px;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.top-area button:hover {
+  background-color: #d1d5db;
+  transition: 500ms;
+}
+
+.colors-area {
+  background-color: white;
+  height: 90%;
+  padding-top: 2em;
+  display: flex;
+}
+
+.color-container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.color {
+  height: 90%;
+  cursor: pointer;
+}
+
+.hex {
+  background-color:white;
+  padding: 0.5em;
+  text-align: center;
+  cursor: pointer;
+}
