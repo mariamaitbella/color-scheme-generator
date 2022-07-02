@@ -1,12 +1,14 @@
 function handleClick() {
   document.getElementById("colors-area").innerHTML = "";
+  // -----------------------------------------------------------VARIABLES
   const pickedColor = document
     .getElementById("pickedColorInput")
     .value.slice(1);
   const modeSelected = document
     .getElementById("modeSelected")
     .value.toLowerCase();
-  console.log(pickedColor);
+  //
+  // -----------------------------------------------------COLOR SCHEME API
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${pickedColor}&mode=${modeSelected}&count=5`
   )
@@ -17,13 +19,19 @@ function handleClick() {
         colorDiv.classList.add("color-container");
         const color = document.createElement("div");
         color.classList.add("color");
-        const hex = document.createElement("div");
+        const hex = document.createElement("input");
         hex.classList.add("hex");
-        hex.innerText = item.hex.value;
+        hex.setAttribute("id", "hex");
+        hex.setAttribute("type", "text");
+        hex.setAttribute("disabled", "true");
+        hex.value = item.hex.value;
         colorDiv.appendChild(color);
         colorDiv.appendChild(hex);
         document.getElementById("colors-area").appendChild(colorDiv);
         color.style.backgroundColor = item.hex.value;
+        hex.addEventListener("click", function () {
+          console.log(hex.text);
+        });
       });
     });
 }
