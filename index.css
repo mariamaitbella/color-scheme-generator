@@ -5,16 +5,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2b283a;
+  background-color: #749DA1;
   font-family: "Anek Malayalam", sans-serif;
   font-size: 15px;
 }
 
 .main-container {
-  background-color: white;
+  background-color: transparent;
   width: 600px;
   height: 70%;
   margin: 5em;
+  /* border-radius: 2px; */
+  border-radius: 10px;
 }
 
 .top-area {
@@ -25,16 +27,28 @@ body {
   padding-right: 1em;
   align-items: center;
   height: 60px;
+  border-color: Black;
+  border-radius: 2px;
 }
 
 .top-area input {
-  border: none;
+  /* border: none; */
   width: 50px;
   height: 35px;
   cursor: pointer;
+  /* -webkit-appearance: none; */
+  
 }
+
+.top-area input::-webkit-color-swatch {
+  /* border-radius: 50%; */
+  border: none;
+}
+
 .top-area select {
-  border-color: #d1d5db;
+  background-color: transparent;
+  color: white;
+  border-color: white;
   padding-left: 0.5em;
   width: 60%;
   border-radius: 5px;
@@ -42,21 +56,25 @@ body {
   cursor: pointer;
 }
 .top-area button {
-  border: 1px solid #d1d5db;
+  border: 1px solid Black;
   padding-left: 0.5em;
   width: 25%;
   border-radius: 5px;
   height: 35px;
   background-color: transparent;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
 .top-area button:hover {
-  background-color: #ecf4ff;
+  color: #749DA1;
+  background-color: white;
   transition: 500ms;
 }
 
 .colors-area {
-  background-color: #2b283a;
+  background-color: #749DA1;
   height: 90%;
   display: flex;
 }
@@ -69,10 +87,8 @@ body {
   justify-content: space-between;
 }
 
-
 .color {
   height: 100%;
-  cursor: pointer;
 }
 
 .hex {
