@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #749DA1;
+  background-color: #749da1;
   font-family: "Anek Malayalam", sans-serif;
   font-size: 15px;
 }
@@ -37,7 +37,6 @@ body {
   height: 35px;
   cursor: pointer;
   /* -webkit-appearance: none; */
-  
 }
 
 .top-area input::-webkit-color-swatch {
@@ -55,6 +54,11 @@ body {
   height: 35px;
   cursor: pointer;
 }
+.top-area select option {
+  color: #749da1;
+  background-color: white;
+}
+
 .top-area button {
   border: 1px solid Black;
   padding-left: 0.5em;
@@ -68,13 +72,13 @@ body {
   border-color: white;
 }
 .top-area button:hover {
-  color: #749DA1;
+  color: #749da1;
   background-color: white;
   transition: 500ms;
 }
 
 .colors-area {
-  background-color: #749DA1;
+  background-color: #749da1;
   height: 90%;
   display: flex;
 }
