@@ -1,7 +1,7 @@
 # color-scheme-generator
 Hello friends!
 
-I am presenting to you my last project that I built using, I had lot of fun building it especially the design and the apis part and here is the final result.
+I am presenting to you my last project that I built using Html, Css and JavaScript, I had lot of fun building it especially the design and the apis part and here is the final result.
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dxwc1hslhswwkt92e3n5.png)
 

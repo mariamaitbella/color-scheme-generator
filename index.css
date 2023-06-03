@@ -54,6 +54,7 @@ body {
   height: 35px;
   cursor: pointer;
 }
+
 .top-area select option {
   color: #749da1;
   background-color: white;
@@ -71,6 +72,7 @@ body {
   color: white;
   border-color: white;
 }
+
 .top-area button:hover {
   color: #749da1;
   background-color: white;
@@ -101,4 +103,37 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 630px) {
+  .main-container {
+    width: unset;
+    height: unset;
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  .top-area {
+    flex-direction: column;
+    height: unset;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+
+  .top-area button,
+  .top-area select {
+    width: 100%;
+  }
+
+  .hex {
+    padding: 6px;
+    font-size: 14px;
+}
 }
