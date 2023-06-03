@@ -108,7 +108,7 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 630px) {
+@media screen and (max-width: 630px) {
   .main-container {
     width: unset;
     height: unset;
